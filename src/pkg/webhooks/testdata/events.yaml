@@ -1,0 +1,201 @@
+---
+webhookevents:
+  - action: delete
+    payload: |
+      {
+        "event": {
+            "app": "monday",
+            "boardId": 1234567890,
+            "itemId": 1301112471,
+            "itemName": "this is an item name",
+            "originalTriggerUuid": null,
+            "subscriptionId": 13115481,
+            "triggerTime": "2023-10-24T18:15:05.598Z",
+            "triggerUuid": "7e7e086cec870b316c44535bd4465d51",
+            "type": "delete_pulse",
+            "userId": 50286745
+        }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "userId": 50286745,
+            "type": "delete_pulse",
+            "timestamp": "2023-10-24T18:15:05.598Z"
+          },
+          "deleteItem": {
+            "itemId": 1301112471,
+            "itemName": "this is an item name"
+          }
+        }
+      }
+
+  - action: create
+    payload: |
+      {
+        "event": {
+            "app": "monday",
+            "boardId": 1234567890,
+            "columnValues": {},
+            "groupColor": "#037f4c",
+            "groupId": "topics",
+            "groupName": "Group Title",
+            "isTopGroup": true,
+            "originalTriggerUuid": null,
+            "pulseId": 1301311853,
+            "pulseName": "this is an item name",
+            "subscriptionId": 13113616,
+            "triggerTime": "2023-10-24T18:15:05.598Z",
+            "triggerUuid": "e2c2168a8c894205a1ac758c28eab9f0",
+            "type": "create_pulse",
+            "userId": 50286745
+        }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "pulseId": 1301311853,
+            "pulseName": "this is an item name",
+            "userId": 50286745,
+            "type": "create_pulse",
+            "timestamp": "2023-10-24T18:15:05.598Z"
+          },
+          "createItem": {
+            "pulseName": "this is an item name",
+            "columnValues": {}
+          }
+        }
+      }
+  - action: create with multiple fields
+    payload: |
+      {
+        "event": {
+          "app": "monday",
+          "boardId": 1302671945,
+          "columnValues": {
+              "some_number": {
+                  "unit": null,
+                  "value": 19800
+              },
+              "language": {
+                  "label": {
+                      "index": 0,
+                      "is_done": false,
+                      "style": {
+                          "border": "#E99729",
+                          "color": "#fdab3d",
+                          "var_name": "orange"
+                      },
+                      "text": "english"
+                  },
+                  "post_id": null
+              }
+          },
+          "groupColor": "#c4c4c4",
+          "groupId": "1234567890_some_group_id",
+          "groupName": "Some Table Group Name",
+          "isTopGroup": true,
+          "originalTriggerUuid": null,
+          "pulseId": 1303335340,
+          "pulseName": "this is a pulse name",
+          "subscriptionId": 987654321,
+          "triggerTime": "2023-10-24T18:15:05.598Z",
+          "triggerUuid": "97b0e62546638617bbadf5954199172d",
+          "type": "create_pulse",
+          "userId": 50745799
+        }
+      }
+    expected: |
+      {
+        "event": {
+          "eventMetadata": {
+            "board": 1302671945,
+            "pulseId": 1303335340,
+            "pulseName": "this is a pulse name",
+            "userId": 50745799,
+            "type": "create_pulse",
+            "timestamp": "2023-10-24T18:15:05.598Z"
+          },
+          "createItem": {
+            "pulseName": "this is a pulse name",
+            "columnValues": {
+              "fields": {
+                "some_number": {
+                  "unit": null,
+                  "value": 19800
+                },
+                "language": {
+                  "label": {
+                    "index": 0,
+                    "is_done": false,
+                    "style": {
+                      "border": "#E99729",
+                      "color": "#fdab3d",
+                      "var_name": "orange"
+                    },
+                    "text": "english"
+                  },
+                  "post_id": null
+                }
+              }
+            }
+          }
+        }
+      }
+  - action: name changed
+    payload: |
+      {
+        "event": {
+          "app": "monday",
+          "boardId": 1234567890,
+          "groupId": "topics",
+          "originalTriggerUuid": null,
+          "previousValue": {
+              "name": "this is an item name"
+          },
+          "pulseId": 1301284708,
+          "subscriptionId": 13113739,
+          "triggerTime": "2023-10-24T18:08:47.466Z",
+          "triggerUuid": "07c611ed38fcc97839b6b714038b5d03",
+          "type": "update_name",
+          "userId": 50286745,
+          "value": {
+              "name": "this is an item name11"
+          }
+        }
+      }
+    expected: |
+      {
+        "Challenge": {
+          "Challenge": ""
+        },
+        "Event": {
+          "EventMetadata": {
+            "Board": 1234567890,
+            "Type": "update_name",
+            "PulseId": 1301284708,
+            "PulseName": null,
+            "UserId": 50286745,
+            "Timestamp": "2023-10-24T18:08:47.466Z"
+          },
+          "UpdateColumnValue": null,
+          "UpdateColumnValueDate": null,
+          "UpdateColumnValueNumeric": null,
+          "UpdateColumnValueStatus": null,
+          "UpdateColumnValueText": null,
+          "UpdateName": {
+            "PreviousValue": {
+              "Name": "this is an item name"
+            },
+            "Value": {
+              "Name": "this is an item name11"
+            }
+          },
+          "DeleteItem": null,
+          "CreateItem": null
+        }
+      }

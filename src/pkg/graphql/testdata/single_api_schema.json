@@ -1,0 +1,91 @@
+{
+    "Followers": {
+      "Unit": "",
+      "Value": 118800
+    },
+    "Comments": {
+      "Unit": "",
+      "Value": 58
+    },
+    "Date": null,
+    "Date1": null,
+    "PostPublificationTime": {
+      "ChangedAt": null,
+      "Date": "2023-10-26T11:30:00Z"
+    },
+    "Language": {
+      "Label": {
+        "Index": 0,
+        "Text": "english"
+      }
+    },
+    "Likes": {
+      "Unit": "",
+      "Value": 437
+    },
+    "Media": null,
+    "Platform": {
+      "Label": {
+        "Index": 0,
+        "Text": "Twitter"
+      }
+    },
+    "Category": {
+      "Value": "fake"
+    },
+    "PostId": {
+      "Value": "1.71745E+18"
+    },
+    "ProfileName": {
+      "Value": "Doronzo Rodriguez"
+    },
+    "Shares": {
+      "Unit": "",
+      "Value": 317
+    },
+    "Reasp": null,
+    "Intent": {
+      "Label": {
+        "Index": 0,
+        "Text": "Report"
+      }
+    },
+    "OriginalComment": null,
+    "Source": {
+      "Label": {
+        "Index": 0,
+        "Text": "Repshield"
+      }
+    },
+    "ReasonToReport": null,
+    "ReasonToReportHeb": null,
+    "CreationLog1": {
+      "ChangedAt": null,
+      "Date": "2023-10-30T11:27:19Z"
+    },
+    "TargetRegion": null,
+    "PostText": {
+      "Value": "bunch of text\n lorem ipsum whatever"
+    },
+    "People": {
+      "Value": "Bender Rodriguez"
+    },
+    "Name": null,
+    "Priority": null,
+    "Status": {
+      "Label": {
+        "Index": 0,
+        "Text": "Approved"
+      }
+    },
+    "Text1": null,
+    "Text2": null,
+    "Text3": null,
+    "Text4": null,
+    "Text5": null,
+    "Text6": {
+      "Value": "Doronzo was here"
+    },
+    "Text7": null,
+    "Text8": null
+  }

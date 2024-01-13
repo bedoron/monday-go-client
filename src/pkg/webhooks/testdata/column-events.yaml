@@ -1,0 +1,173 @@
+---
+webhookevents:
+  - action: update column number
+    payload: |
+      {
+        "event": {
+          "app": "monday",
+          "boardId": 1234567890,
+          "changedAt": 1698170123.5145502,
+          "columnId": "dup__of_likes",
+          "columnTitle": "Comments",
+          "columnType": "numeric",
+          "groupId": "topics",
+          "isTopGroup": true,
+          "originalTriggerUuid": null,
+          "previousValue": null,
+          "pulseId": 1301284708,
+          "pulseName": "some pulse name",
+          "subscriptionId": 13113614,
+          "triggerTime": "2023-10-24T18:15:05.598Z",
+          "triggerUuid": "052e24e7be450672fed08c7d99a78f5f",
+          "type": "update_column_value",
+          "userId": 50286745,
+          "value": {
+              "unit": null,
+              "value": 12
+          }
+        }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "userId": 50286745,
+            "type": "update_column_value",
+            "timestamp": "2023-10-24T18:15:05.598Z",
+            "pulseName": "some pulse name",
+            "pulseId": 1301284708
+          },
+          "updateColumnValue": {
+            "field": "Comments",
+            "fieldId": "dup__of_likes",
+            "valueType": "numeric"
+          },
+          "updateColumnValueNumeric": {
+            "value": {
+              "unit": "",
+              "value": 12
+            }
+          }
+        }
+      }
+  - action: update column status
+    payload: |
+      {
+        "event": {
+          "app": "monday",
+          "boardId": 1234567890,
+          "changedAt": 1698525372.238974,
+          "columnId": "status",
+          "columnTitle": "Status",
+          "columnType": "color",
+          "groupId": "1698336774_repshield_targets__",
+          "isTopGroup": false,
+          "originalTriggerUuid": null,
+          "previousValue": null,
+          "pulseId": 1304544177,
+          "pulseName": "some pulse name",
+          "subscriptionId": 13256969,
+          "triggerTime": "2023-10-24T18:15:05.598Z",
+          "triggerUuid": "164b0bcfa6545d7ea90a9e8919a07a7e",
+          "type": "update_column_value",
+          "userId": 50286745,
+          "value": {
+              "label": {
+                  "index": 1,
+                  "is_done": true,
+                  "style": {
+                      "border": "#00B461",
+                      "color": "#00c875",
+                      "var_name": "green-shadow"
+                  },
+                  "text": "Declined"
+              },
+              "post_id": null
+          }
+        }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "userId": 50286745,
+            "type": "update_column_value",
+            "timestamp": "2023-10-24T18:15:05.598Z",
+            "pulseName": "some pulse name",
+            "pulseId": 1304544177
+          },
+          "updateColumnValue": {
+            "field": "Status",
+            "fieldId": "status",
+            "valueType": "color"
+          },
+          "updateColumnValueStatus": {
+            "value": {
+              "label": {
+                "index": 1,
+                "text": "Declined"
+              }
+            }
+          }
+        }
+      }
+  - action: update column date
+    payload: |
+      {
+        "event": {
+          "app": "monday",
+          "boardId": 1234567890,
+          "changedAt": 1698567735.2186654,
+          "columnId": "date2",
+          "columnTitle": "Date Field",
+          "columnType": "date",
+          "groupId": "1698336774_repshield_targets__",
+          "isTopGroup": false,
+          "originalTriggerUuid": null,
+          "previousValue": {
+              "changed_at": "2023-10-29T08:21:36.023Z",
+              "date": "2023-10-11",
+              "icon": "",
+              "time": "09:00:00"
+          },
+          "pulseId": 1304544177,
+          "pulseName": "some pulse name",
+          "subscriptionId": 13256969,
+          "triggerTime": "2023-10-24T18:15:05.598Z",
+          "triggerUuid": "5f82fb3593793d170f1601e7037f4e38",
+          "type": "update_column_value",
+          "userId": 50286745,
+          "value": {
+              "changed_at": "2023-10-29T08:22:11.737Z",
+              "date": "2023-10-12",
+              "icon": "",
+              "time": "09:00:00"
+          }
+        }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "userId": 50286745,
+            "type": "update_column_value",
+            "timestamp": "2023-10-24T18:15:05.598Z",
+            "pulseName": "some pulse name",
+            "pulseId": 1304544177
+          },
+          "updateColumnValue": {
+            "field": "Date Field",
+            "fieldId": "date2",
+            "valueType": "date"
+          },
+          "updateColumnValueDate": {
+            "value": {
+                "changedAt": "2023-10-29T08:22:11.737Z",
+                "date": "2023-10-12T00:00:00Z"
+            }
+          }
+        }
+      }
