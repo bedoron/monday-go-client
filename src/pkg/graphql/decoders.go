@@ -51,14 +51,14 @@ func decodeGQLColumnHook() mapstructure.DecodeHookFunc {
 			g.GQLNumeric = &GQLNumeric{}
 
 			// i, err := strconv.ParseInt(*g.Text, 10, 32)
-			f, err := strconv.ParseFloat(*g.Text, 10)
+			f, err := strconv.ParseFloat(*g.Text, 64)
 			if err != nil {
 				return data, err
 			}
 			g.GQLNumeric = &GQLNumeric{
 				Value: f,
 			}
-		case ValueTypeText, ValueTypePeopleGQL:
+		case entities.ValueTypeText, ValueTypePeopleGQL:
 			if g.Text == nil || len(*g.Text) == 0 {
 				return g, nil
 			}

@@ -56,7 +56,8 @@ type UpdateColumnValueDate struct {
 }
 
 type UpdateColumnValueText struct {
-	Value entities.ColumnString
+	Value         entities.ColumnString
+	PreviousValue entities.ColumnString
 }
 
 type UpdateColumnValueNumeric struct {

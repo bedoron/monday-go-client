@@ -61,7 +61,7 @@ func (gqll *GraphQLLoader) Load(gqlItem *GQLItem) {
 			}
 
 			refVal = reflect.ValueOf(c)
-		case ValueTypeText, ValueTypePeopleGQL:
+		case entities.ValueTypeText, ValueTypePeopleGQL:
 			c := &entities.ColumnString{
 				Value: column.GQLText.Text,
 			}

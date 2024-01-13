@@ -79,7 +79,14 @@ func decodeWebhookHook() mapstructure.DecodeHookFunc {
 				} else {
 					e.UpdateColumnValueStatus = ucvs
 				}
+			case entities.ValueTypeText:
+				if ucvt, err := parse[UpdateColumnValueText](d); err != nil {
+					return data, err
+				} else {
+					e.UpdateColumnValueText = ucvt
+				}
 			}
+
 		}
 
 		return e, nil
