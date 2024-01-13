@@ -11,3 +11,9 @@ For GraphQL responses, just create a struct which describes your Monday table sc
 ### Example Diagram
 
 T
+
+# Install
+Note: I still haven't stabilized the design
+```bash
+go get github.com/bedoron/monday-go-client@master
+```

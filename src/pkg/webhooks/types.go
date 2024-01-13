@@ -68,14 +68,6 @@ type UpdateColumnValueStatus struct {
 	Value entities.ColumnStatus
 }
 
-// type Column struct {
-// 	entities.ColumnDate    `mapstructure:",squash"`
-// 	entities.ColumnNumeric `mapstructure:",squash"`
-// 	entities.ColumnStatus  `mapstructure:",squash"`
-// 	entities.ColumnString  `mapstructure:",squash"`
-// 	entities.ColumnName    `mapstructure:",squash"`
-// }
-
 type DeleteItem struct {
 	ItemId   uint64 `mapstructure:"itemId"`
 	ItemName string `mapstructure:"itemName"`
@@ -87,6 +79,6 @@ type CreateItem struct {
 }
 
 type UpdateName struct {
-	PreviousValue entities.ColumnDate `mapstructure:",omitempty"`
+	PreviousValue entities.ColumnName `mapstructure:",omitempty"`
 	Value         entities.ColumnName `mapstructure:",omitempty"`
 }
