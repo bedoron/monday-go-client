@@ -1,5 +1,59 @@
 ---
 webhookevents:
+  - action: update column text
+    payload: |
+      {
+          "event": {
+              "app": "monday",
+              "boardId": 1234567890,
+              "changedAt": 1704305064.675599,
+              "columnId": "some_columnt_id",
+              "columnTitle": "Some Column",
+              "columnType": "text",
+              "groupId": "topics",
+              "isTopGroup": true,
+              "originalTriggerUuid": null,
+              "previousValue": {
+                  "value": "Smurfland"
+              },
+              "pulseId": 1304544177,
+              "pulseName": "this is an item name",
+              "subscriptionId": 13115481,
+              "triggerTime": "2023-10-24T18:15:05.598Z",
+              "triggerUuid": "288e66d82292bf7a17296b41918bd3a6",
+              "type": "update_column_value",
+              "userId": 50286745,
+              "value": {
+                  "value": "Smurfville"
+              }
+          }
+      }
+    expected: |
+      { 
+        "event": {
+          "eventMetadata": { 
+            "board": 1234567890,
+            "userId": 50286745,
+            "type": "update_column_value",
+            "timestamp": "2023-10-24T18:15:05.598Z",
+            "pulseName": "this is an item name",
+            "pulseId": 1304544177
+          },
+          "updateColumnValue": {
+            "field": "Some Column",
+            "fieldId": "some_columnt_id",
+            "valueType": "text"
+          },
+          "updateColumnValueText": {
+            "value": {
+              "value": "Smurfville"
+            },
+            "previousValue": {
+              "value": "Smurfland"
+            }
+          }
+        }
+      }
   - action: update column number
     payload: |
       {

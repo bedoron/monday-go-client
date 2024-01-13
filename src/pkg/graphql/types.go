@@ -8,7 +8,6 @@ const (
 	ValueTypeStatusGQL    = "status"       // graphql only
 
 	ValueTypeNumericGQL = "numbers" // graphql only
-	ValueTypeText       = "text"    // graphql only
 	ValueTypePeopleGQL  = "people"  // graphql only
 )
 
