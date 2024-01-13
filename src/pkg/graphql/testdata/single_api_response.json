@@ -1,0 +1,205 @@
+{
+    "created_at": "2023-10-30T11:27:19Z",
+    "id": "1305398946",
+    "name": "some monday entry name",
+    "column_values": [
+        {
+            "id": "status",
+            "text": "Approved",
+            "type": "status",
+            "value": "{\"index\":1}"
+        },
+        {
+            "id": "priority",
+            "text": "",
+            "type": "status",
+            "value": null
+        },
+        {
+            "id": "text7",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "source",
+            "text": "Repshield",
+            "type": "status",
+            "value": "{\"index\":1}"
+        },
+        {
+            "id": "support___report",
+            "text": "Report",
+            "type": "status",
+            "value": "{\"index\":1}"
+        },
+        {
+            "id": "status_1",
+            "text": null,
+            "type": "status",
+            "value": null
+        },
+        {
+            "id": "status_18",
+            "text": null,
+            "type": "status",
+            "value": null
+        },
+        {
+            "id": "platform",
+            "text": "Twitter",
+            "type": "status",
+            "value": "{\"index\":1}"
+        },
+        {
+            "id": "creation_log_1",
+            "text": "2023-10-30 11:27:19 UTC",
+            "type": "creation_log",
+            "value": "{\"created_at\":\"2023-10-30T11:27:19Z\",\"creator_id\":\"49986733\"}"
+        },
+        {
+            "id": "date2",
+            "text": "2023-10-26 11:30",
+            "type": "date",
+            "value": "{\"date\":\"2023-10-26\",\"time\":\"08:30:00\"}"
+        },
+        {
+            "id": "profile_name",
+            "text": "Doronzo Rodriguez",
+            "type": "text",
+            "value": "\"Doronzo Rodriguez\""
+        },
+        {
+            "id": "__followers",
+            "text": "118800",
+            "type": "numbers",
+            "value": "\"118800\""
+        },
+        {
+            "id": "language",
+            "text": "english",
+            "type": "status",
+            "value": "{\"index\":0}"
+        },
+        {
+            "id": "target_region",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "likes",
+            "text": "437",
+            "type": "numbers",
+            "value": "\"437\""
+        },
+        {
+            "id": "comments",
+            "text": "58",
+            "type": "numbers",
+            "value": "\"58\""
+        },
+        {
+            "id": "shares",
+            "text": "317",
+            "type": "numbers",
+            "value": "\"317\""
+        },
+        {
+            "id": "post_category",
+            "text": "fake",
+            "type": "text",
+            "value": "\"fake\""
+        },
+        {
+            "id": "text_of_the_post",
+            "text": "bunch of text\n lorem ipsum whatever",
+            "type": "text",
+            "value": "\"bunch of text\\n lorem ipsum whatever\""
+        },
+        {
+            "id": "link_to_media",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "post_id",
+            "text": "1.71745E+18",
+            "type": "text",
+            "value": "\"1.71745E+18\""
+        },
+        {
+            "id": "text_1",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_2",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_3",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_4",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_5",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_6",
+            "text": "Doronzo was here",
+            "type": "text",
+            "value": "Doronzo was here"
+        },
+        {
+            "id": "text_7",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "text_8",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "date",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "date_1",
+            "text": null,
+            "type": "text",
+            "value": null
+        },
+        {
+            "id": "people",
+            "text": "Bender Rodriguez",
+            "type": "people",
+            "value": "{\"changed_at\":\"2023-10-30T11:27:20.804Z\",\"personsAndTeams\":[{\"id\":12345678,\"kind\":\"person\"}]}"
+        },
+        {
+            "id": "post_pub_hour",
+            "text": null,
+            "type": "text",
+            "value": null
+        }
+    ]
+}

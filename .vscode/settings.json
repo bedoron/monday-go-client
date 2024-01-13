@@ -1,0 +1,7 @@
+{
+    "gopls": { "ui.semanticTokens": true },
+    "go.testFlags": ["-count=1", "-v"],
+    "go.testEnvVars": {
+        "WORKSPACE_DIR": "${workspaceFolder}"
+    }
+}
